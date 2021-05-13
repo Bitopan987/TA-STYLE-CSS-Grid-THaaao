@@ -900,6 +900,10 @@ ALL SECTION
     -ms-grid-rows: (1fr)[3];
         grid-template-rows: repeat(3, 1fr);
   }
+  .contact .btn {
+    width: 100%;
+    text-align: center;
+  }
   .map-section {
     padding: 2rem;
   }

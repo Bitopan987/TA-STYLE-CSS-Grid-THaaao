@@ -100,6 +100,10 @@ ALL SECTION
   .contact {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
+    .btn {
+      width: 100%;
+      text-align: center;
+    }
   }
   .map-section {
     padding: 2rem;
