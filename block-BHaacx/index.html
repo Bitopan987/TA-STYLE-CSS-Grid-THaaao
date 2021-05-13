@@ -21,20 +21,312 @@
   </head>
   <body>
     <header class="header">
-      <div class="navbar flex">
+      <div class="container nav_bar flex justify-between align-center">
         <a href="#" class="brand">
-          <strong>Stimulas</strong>
+          <h2>Stimulus</h2>
         </a>
+        <label class="bars" for="toggle">
+          <i class="fas fa-bars"></i>
+        </label>
+        <input type="checkbox" id="toggle" />
         <nav class="nav">
           <ul class="nav-menu flex">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT US</a></li>
-            <li><a href="#">EXPERIENCES</a></li>
-            <li><a href="#">TESTIMONIAL</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li>
+              <a id="active" href="./index.html">Home</a>
+            </li>
+            <li>
+              <a href="#">About Me</a>
+            </li>
+            <li>
+              <a href="#">Experiances</a>
+            </li>
+            <li>
+              <a href="#">Testimonial</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
+    <main>
+      <!-- Hero Section -->
+
+      <section class="hero">
+        <div class="hero_img">
+          <img src="./assets/media/home-img.jpg" alt="home-img.jpg" />
+        </div>
+        <article class="hero_content">
+          <h5>WELCOME TO MY WEBSITE</h5>
+          <h1>
+            Hello, I am <strong>Stimulus </strong> currently based in New York
+            City.
+          </h1>
+          <p>
+            Donec auctor arcu at efficitur lacinia. Praesent bibendum efficitur
+            ipsum, et mattis tellus interdum in. Ut a dictum purus. Vestibulum
+            non pellentesque felis, sed dignissim urna. Vestibulum id accumsan
+            quam.
+          </p>
+          <a href="#" class="btn btn-primary">GET STARTED</a>
+        </article>
+      </section>
+
+      <!-- Skill Section -->
+
+      <section class="skill">
+        <article class="skill_content">
+          <h2>Donec auctor</h2>
+          <h5>Sed vulputate vitae diam quis bibendum</h5>
+          <p>
+            Phasellus vulputate tellus nec tortor varius elementum. Curabitur at
+            pulvinar ante felis eu, iaculis congue sem. Mauris convallis eros
+            massa.
+          </p>
+          <p>
+            Quisque viverra iaculis aliquam. Etiam volutpat, justo non aliquam
+            bibendum, erat, quis porta odio odio at velit.
+          </p>
+        </article>
+        <div class="skill_img">
+          <img src="./assets/media/about-img.jpg" alt="about-img.jpg" />
+        </div>
+        <div class="my-skill">
+          <h2>My Skills</h2>
+          <p>Photoshop. HTML CSS JS. Web Design</p>
+          <div>
+            <div class="flex flex-column skills-percent">
+              <div class="flex justify-between">
+                <strong>Frontend Design</strong>
+                <span>90%</span>
+              </div>
+              <meter min="0" max="100" value="90"></meter>
+            </div>
+            <div class="flex flex-column skills-percent">
+              <div class="flex justify-between">
+                <strong>Backend Processing</strong>
+                <span>70%</span>
+              </div>
+              <meter min="0" max="100" value="70"></meter>
+            </div>
+            <div class="flex flex-column skills-percent">
+              <div class="flex justify-between">
+                <strong>HTML5 & CSS3</strong>
+                <span>80%</span>
+              </div>
+              <meter min="0" max="100" value="90"></meter>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Feature Section -->
+
+      <section class="feature">
+        <article class="feature_col feature_col1">
+          <div>
+            <img src="./assets/media/laptop.png" alt="laptop.png" />
+          </div>
+          <h3>Interface Design</h3>
+          <p>
+            Phasellus vulputate tellus nec tortor varius elementum. Curabitur at
+            pulvinar ante.
+          </p>
+        </article>
+        <article class="feature_col feature_col2">
+          <div>
+            <img src="./assets/media/rocket.png" alt="rocket.png" />
+          </div>
+          <h3>Media Strategy</h3>
+          <p>
+            Curabitur at pulvinar ante. Duis dui urna, faucibus eget felis eu,
+            iaculis Mauris convallis
+          </p>
+        </article>
+        <article class="feature_col feature_col3">
+          <div>
+            <img
+              src="./assets/media/user-interface.png"
+              alt="user-interface.png"
+            />
+          </div>
+          <h3>Mobile App</h3>
+          <p>
+            Mauris convallis eros massa, vitae euismod arcu tempus ut. Quisque
+            viverra iaculis.
+          </p>
+        </article>
+        <article class="feature_col feature_col4">
+          <div>
+            <img src="./assets/media/html.png" alt="html.png" />
+          </div>
+          <h3>Coding</h3>
+          <p>
+            Mauris convallis eros massa, vitae euismod arcu tempus ut. Quisque
+            viverra iaculis.
+          </p>
+        </article>
+      </section>
+
+      <!-- Experience Section -->
+
+      <section class="experience">
+        <div class="experience_img">
+          <img src="assets/media/experience-img.jpg" alt="EXPERIANCE" />
+        </div>
+        <div class="experience_content flex flex-column">
+          <h2>My Experiances</h2>
+          <h5>Previous companies and my tasks</h5>
+          <div class="flex align-center details">
+            <div>
+              <img src="./assets/media/laptop.png" alt="laptop.png" />
+            </div>
+            <div>
+              <h3>Graphic Designer <span>2014 Jul - 2015 Sep</span></h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="flex align-center details">
+            <div>
+              <img src="./assets/media/laptop.png" alt="laptop.png" />
+            </div>
+            <div>
+              <h3>Web Designer <span>2015 Oct - 2017 Jan</span></h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education Section -->
+
+      <section class="education">
+        <div class="education_content flex flex-column">
+          <h2>My Eduacation</h2>
+          <h5>Lorem ipsum dolor sit amet consectetur.</h5>
+          <div class="flex align-center education_text">
+            <div>
+              <img src="./assets/media/laptop.png" alt="laptop.png" />
+            </div>
+            <div>
+              <h3>Master in Design <span>2012 Jan - 2014 May</span></h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit sit
+                amet dolor ipsum lorem.
+              </p>
+            </div>
+          </div>
+          <div class="flex align-center education_text">
+            <div>
+              <img src="./assets/media/laptop.png" alt="laptop.png" />
+            </div>
+            <div>
+              <h3>Bachelor of Arts <span>2008 May - 2011 Dec</span></h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit amet
+                consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="education_img">
+          <img src="assets/media/education-img.jpg" alt="Education" />
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+
+      <section class="contact">
+        <div class="contact_content">
+          <h2>Say hello..</h2>
+          <p>Scorching time start few noontide vast take of feel hall.</p>
+          <form action="#">
+            <fieldset>
+              <input type="text" class="form_control" placeholder="Your Name" />
+              <input
+                type="email"
+                class="form_control"
+                placeholder="Your Email"
+              />
+              <textarea
+                name="message"
+                class="form_control"
+                rows="6"
+                placeholder="Write your message..."
+              ></textarea>
+              <a href="#" class="btn btn-secondary">Send</a>
+            </fieldset>
+          </form>
+        </div>
+        <div class="hello-img">
+          <img src="assets/media/contact-img.jpg" alt="Contact" />
+        </div>
+        <div class="office">
+          <h4>Visit my office</h4>
+          <p>456 New Street 220000, New York City, USA</p>
+          <h4>Contact.</h4>
+          <ul>
+            <li><i class="fas fa-phone"></i> 01-0110-0220</li>
+            <li>
+              <a href="#">
+                <i class="far fa-envelope"></i>
+                hello@company.co
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-globe-asia"></i>
+                company.co
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="map flex justify-center align-center">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13504.711461632438!2d76.36039842586928!3d32.19943760594047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b522c7cd8b85b%3A0x9d68653444d4c03a!2sRakkar%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1620735170555!5m2!1sen!2sin"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="footer flex flex-column justify-center align-center">
+      <small>
+        Copyright &copy; 2021 yxz Company | Designed by
+        <span class="red">Shishupal Kumar</span>
+      </small>
+      <ul class="flex justify-bw">
+        <li>
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fab fa-google-plus-g"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fab fa-dribbble"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>

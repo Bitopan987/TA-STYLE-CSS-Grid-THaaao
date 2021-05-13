@@ -37,12 +37,20 @@ Modular Classes
   text-align: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .align-center {
   align-items: center;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
 .container {
-  max-width: 65rem;
+  max-width: 80rem;
   margin: 0 auto;
   padding: 0 2rem;
   width: 100%;
@@ -53,40 +61,34 @@ Modular Classes
 }
 
 #active {
-  color: $pure;
-  background-color: $primary;
-  padding: 1.7rem 1rem;
+  color: $secondary;
+  &:hover {
+    color: #fff;
+  }
 }
 
-// .btn {
-//   padding: 0.5rem 1.3rem;
-//   border-radius: 25px;
-//   display: inline-block;
-//   border: 2px solid $primary;
-//   &-primary {
-//     background-color: $primary;
-//     color: $pure;
-//   }
-//   &-secondary {
-//     border-bottom: 3px solid $text;
-//     color: $primary;
-//   }
-//   &-tertiary {
-//     border-top: 3px solid $text;
-//     color: $primary;
-//   }
-//   &-ternary {
-//     border-color: $bg;
-//     color: $bg;
-//   }
-//   &-card {
-//     color: $primary;
-//   }
-//   &-active {
-//     color: $pure;
-//     background-color: $primary;
-//   }
-// }
+.btn {
+  padding: 0.5rem 1.3rem;
+  border-radius: 25px;
+  display: inline-block;
+  &-primary {
+    color: $dark;
+    border: 2px solid $dark;
+  }
+  &-secondary {
+    background-color: $pure;
+    color: $primary;
+    padding: 0.5rem 3rem;
+  }
+
+  &-card {
+    color: $primary;
+  }
+  &-active {
+    color: $pure;
+    background-color: $primary;
+  }
+}
 
 //   @media screen and (max-width: $breakpoint-mobile) {
 //     html {
