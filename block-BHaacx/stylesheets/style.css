@@ -148,36 +148,6 @@ Modular Classes
   display: flex;
 }
 
-.flex-48 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 48%;
-          flex: 0 1 48%;
-}
-
-.flex-30 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 31%;
-          flex: 0 1 31%;
-}
-
-.flex-23 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 23%;
-          flex: 0 1 23%;
-}
-
-.flex-70 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 70%;
-          flex: 0 1 70%;
-}
-
-.flex-23 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 23%;
-          flex: 0 1 23%;
-}
-
 .justify-between {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -187,10 +157,6 @@ Modular Classes
 .wrap {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-.center {
-  text-align: center;
 }
 
 .justify-center {
@@ -220,11 +186,11 @@ Modular Classes
 }
 
 .padding {
-  padding: 4rem 0;
+  padding: 5rem 0;
 }
 
 #active {
-  color: #ecaf4e;
+  color: #fc683e;
 }
 
 #active:hover {
@@ -245,16 +211,8 @@ Modular Classes
 .btn-secondary {
   background-color: #fff;
   color: #fc683e;
-  padding: 0.5rem 3rem;
-}
-
-.btn-card {
-  color: #fc683e;
-}
-
-.btn-active {
-  color: #fff;
-  background-color: #fc683e;
+  padding: 0.7rem 4rem;
+  font-size: 1.3rem;
 }
 
 /* ---------------------------------------------------------------
@@ -333,7 +291,7 @@ MEDIA QUERY FOR  MEDIUM SCREENS
 --------------------------------------------------------------- */
 @media screen and (max-width: 768px) {
   html {
-    font-size: 12px;
+    font-size: 14px;
   }
   .container {
     max-width: 768px;
@@ -378,106 +336,6 @@ Header
 #toggle,
 .bars {
   display: none;
-}
-
-/* ---------------------------------------------------------------
-Media Queries for header
---------------------------------------------------------------- */
-@media screen and (max-width: 768px) {
-  .nav_bar {
-    position: fixed;
-    height: 5rem;
-    background-color: #fff;
-    -webkit-box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
-            box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
-    top: 0;
-    z-index: 100;
-  }
-  .nav {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding-top: 13rem;
-    z-index: 9;
-  }
-  .nav-menu li a {
-    font-size: 1.2rem;
-    color: #fff;
-  }
-  .nav-menu li a:hover {
-    color: #ecaf4e;
-  }
-  .brand,
-  .bars {
-    position: fixed;
-    top: 1rem;
-    z-index: 99;
-  }
-  .brand {
-    left: 2rem;
-    top: 1.5rem;
-  }
-  .bars {
-    right: 2rem;
-    color: #ecaf4e;
-  }
-  .nav-menu li {
-    margin: 1rem 0;
-  }
-  #toggle:checked ~ .nav {
-    display: inline-block;
-  }
-  .bars {
-    font-size: 2rem;
-    color: #ecaf4e;
-    display: inline-block;
-  }
-  .nav-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  /* GENeRAL */
-  .hero {
-    margin-top: 5.2rem;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  .skills-container {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  .works-container {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  .experience-education {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  .contact-container {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  .map-container iframe {
-    width: 21rem;
-    height: 25rem;
-  }
 }
 
 /* ---------------------------------------------------------------
@@ -605,7 +463,7 @@ SKILLS SECTION
 }
 
 .skill .my-skill .skills-percent {
-  margin-bottom: 0.7rem;
+  margin-bottom: 1rem;
 }
 
 /* ---------------------------------------------------------------
@@ -840,6 +698,217 @@ Contact Section
 }
 
 .contact .btn {
-  margin-top: 1rem;
+  margin-top: 2rem;
+}
+
+.contact_img img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.contact_add {
+  padding: 3rem;
+  background-color: aqua;
+}
+
+.contact_add h2 {
+  color: #fff;
+}
+
+.contact_add p {
+  color: #f5ecec;
+  padding: 0.8rem 0;
+  font-size: 1.2rem;
+}
+
+.contact_add li {
+  padding: 0.9rem 0;
+  font-size: 1.3rem;
+  color: #f5ecec;
+}
+
+.contact_add i {
+  color: #fff;
+  padding-right: 0.5rem;
+}
+
+.contact_add a {
+  color: #f5ecec;
+}
+
+/* ---------------------------------------------------------------
+Map Section
+--------------------------------------------------------------- */
+.map-section {
+  padding: 5rem;
+  background-color: #fc683e;
+}
+
+.map-section .map {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+.map-section iframe {
+  width: 100%;
+  height: 30rem;
+  border-radius: 7px;
+}
+
+/* ---------------------------------------------------------------
+Footer
+--------------------------------------------------------------- */
+.footer small {
+  color: #808080;
+  padding-bottom: 3rem;
+}
+
+.footer small span {
+  color: #fc683e;
+  font-weight: 700;
+  padding-left: 0.4rem;
+}
+
+.footer li {
+  margin-right: 2.5rem;
+}
+
+.footer li a {
+  color: #808080;
+  font-size: 1.3rem;
+}
+
+/* ---------------------------------------------------------------
+Media Queries for header
+--------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+  .nav_bar {
+    position: fixed;
+    height: 5rem;
+    background-color: #fff;
+    -webkit-box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
+    top: 0;
+    z-index: 100;
+  }
+  .nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 13rem;
+    z-index: 9;
+  }
+  .nav-menu li a {
+    font-size: 1.2rem;
+    color: #fff;
+  }
+  .nav-menu li a:hover {
+    color: #ecaf4e;
+  }
+  .brand,
+  .bars {
+    position: fixed;
+    top: 1rem;
+    z-index: 99;
+  }
+  .brand {
+    left: 2rem;
+    top: 1.5rem;
+  }
+  .bars {
+    right: 2rem;
+    color: #ecaf4e;
+  }
+  .nav-menu li {
+    margin: 1rem 0;
+  }
+  #toggle:checked ~ .nav {
+    display: inline-block;
+  }
+  .bars {
+    font-size: 2rem;
+    color: #ecaf4e;
+    display: inline-block;
+  }
+  .nav-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sm_center {
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  /* ---------------------------------------------------------------
+ALL SECTION
+--------------------------------------------------------------- */
+  .hero {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
+  .hero_content {
+    padding: 3rem;
+  }
+  .skill {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+  .feature {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+  }
+  .experience {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
+  .education {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
+  .contact {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+  .map-section {
+    padding: 2rem;
+  }
+  .map-section .map {
+    max-width: 90rem;
+    padding: 0;
+  }
+  .map-section iframe {
+    height: 18rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
