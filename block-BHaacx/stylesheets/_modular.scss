@@ -5,36 +5,12 @@ Modular Classes
   display: flex;
 }
 
-.flex-48 {
-  flex: 0 1 48%;
-}
-
-.flex-30 {
-  flex: 0 1 31%;
-}
-
-.flex-23 {
-  flex: 0 1 23%;
-}
-
-.flex-70 {
-  flex: 0 1 70%;
-}
-
-.flex-23 {
-  flex: 0 1 23%;
-}
-
 .justify-between {
   justify-content: space-between;
 }
 
 .wrap {
   flex-wrap: wrap;
-}
-
-.center {
-  text-align: center;
 }
 
 .justify-center {
@@ -57,11 +33,11 @@ Modular Classes
 }
 
 .padding {
-  padding: 4rem 0;
+  padding: 5rem 0;
 }
 
 #active {
-  color: $secondary;
+  color: $primary;
   &:hover {
     color: #fff;
   }
@@ -78,36 +54,7 @@ Modular Classes
   &-secondary {
     background-color: $pure;
     color: $primary;
-    padding: 0.5rem 3rem;
-  }
-
-  &-card {
-    color: $primary;
-  }
-  &-active {
-    color: $pure;
-    background-color: $primary;
+    padding: 0.7rem 4rem;
+    font-size: 1.3rem;
   }
 }
-
-//   @media screen and (max-width: $breakpoint-mobile) {
-//     html {
-//       font-size: 14px;
-//     }
-
-//     .flex-100 {
-//       flex: 0 1 100%;
-//     }
-
-//     .flex-25 {
-//       flex: 0 1 25%;
-//     }
-
-//     .sm-center {
-//       justify-content: center;
-//     }
-
-//     .display {
-//       display: none;
-//     }
-//   }
