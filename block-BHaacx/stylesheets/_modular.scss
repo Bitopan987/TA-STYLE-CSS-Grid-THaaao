@@ -1,0 +1,60 @@
+/* ---------------------------------------------------------------
+Modular Classes
+--------------------------------------------------------------- */
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.padding {
+  padding: 5rem 0;
+}
+
+#active {
+  color: $primary;
+  &:hover {
+    color: #fff;
+  }
+}
+
+.btn {
+  padding: 0.5rem 1.3rem;
+  border-radius: 25px;
+  display: inline-block;
+  &-primary {
+    color: $dark;
+    border: 2px solid $dark;
+  }
+  &-secondary {
+    background-color: $pure;
+    color: $primary;
+    padding: 0.7rem 4rem;
+    font-size: 1.3rem;
+  }
+}

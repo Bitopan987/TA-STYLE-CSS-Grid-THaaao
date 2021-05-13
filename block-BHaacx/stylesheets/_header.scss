@@ -1,0 +1,39 @@
+/* ---------------------------------------------------------------
+Header
+--------------------------------------------------------------- */
+
+.header {
+  padding: 1rem 0;
+  position: absolute;
+  width: 100%;
+}
+.brand {
+  h2 {
+    font-size: 1.5rem;
+    color: $dark;
+    font-weight: 700;
+    text-shadow: 1px 1px $pure;
+  }
+}
+.nav-menu {
+  li {
+    margin-left: 0.8rem;
+    font-size: 0.9rem;
+    a {
+      color: $text;
+      font-weight: 500;
+      font-size: 0.9rem;
+      padding: 1rem;
+      border-radius: 5px;
+      text-transform: uppercase;
+      &:hover {
+        color: $pure;
+        background: $secondary;
+      }
+    }
+  }
+}
+#toggle,
+.bars {
+  display: none;
+}

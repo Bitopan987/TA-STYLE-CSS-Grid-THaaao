@@ -1,0 +1,118 @@
+/* ---------------------------------------------------------------
+Media Queries for header
+--------------------------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+  .nav_bar {
+    position: fixed;
+    height: 5rem;
+    background-color: $pure;
+    box-shadow: 0 5px 4px rgba($color: #000000, $alpha: 0.2);
+    top: 0;
+    z-index: 100;
+  }
+  .nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 13rem;
+    z-index: 9;
+  }
+  .nav-menu li a {
+    font-size: 1.2rem;
+    color: $pure;
+  }
+  .nav-menu li a:hover {
+    color: $secondary;
+  }
+  .brand,
+  .bars {
+    position: fixed;
+    top: 1rem;
+    z-index: 99;
+  }
+  .brand {
+    left: 2rem;
+    top: 1.5rem;
+  }
+  .bars {
+    right: 2rem;
+    color: $secondary;
+  }
+  .nav-menu li {
+    margin: 1rem 0;
+  }
+  #toggle:checked ~ .nav {
+    display: inline-block;
+  }
+  .bars {
+    font-size: 2rem;
+    color: $secondary;
+    display: inline-block;
+  }
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  // General
+
+  .sm_center {
+    display: grid;
+    align-content: center;
+  }
+
+  /* ---------------------------------------------------------------
+ALL SECTION
+--------------------------------------------------------------- */
+
+  .hero {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    &_content {
+      padding: 3rem;
+    }
+  }
+
+  .skill {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .feature {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .experience {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .education {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .contact {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    .btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .map-section {
+    padding: 2rem;
+    .map {
+      max-width: 90rem;
+      padding: 0;
+    }
+    iframe {
+      height: 18rem;
+    }
+  }
+}
